@@ -115,3 +115,8 @@ function payment_gateway_disable_country( $available_gateways ) {
     }
      
     add_filter( 'woocommerce_available_payment_gateways', 'payment_gateway_disable_country' );
+
+    add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
+        function custom_shipping_package_name( $name ) {
+        return 'Versand';
+    }

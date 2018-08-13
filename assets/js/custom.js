@@ -9,9 +9,11 @@
 			$( '.loader' ).fadeOut();
 			$( '.page-loader' ).delay( 350 ).fadeOut( 'slow' );
 		}
+		
 	);
 
 	$( document ).ready(
+		
 		function() {
 
 			/* ---------------------------------------------- /*
@@ -648,4 +650,10 @@
 		}
 	);
 
+	
+
 })( jQuery );
+
+document.querySelector('.woocommerce-terms-and-conditions-link').textContent = "AGB";
+document.querySelector('.showlogin').href = "/dev/mein-konto/";
+document.querySelector('.showcoupon').href = "/dev/warenkorb/";

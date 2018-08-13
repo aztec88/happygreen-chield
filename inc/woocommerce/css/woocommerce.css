@@ -1061,7 +1061,7 @@ ul.digital-downloads li:before {
 }
 
 .demo_store {
-	position: fixed;
+	position: relative;
 	z-index: 99999;
 	right: 0;
 	bottom: 0;
@@ -1083,6 +1083,7 @@ ul.digital-downloads li:before {
 }
 .woocommerce-store-notice__dismiss-link{
 	margin-left: 15px;
+	display: none;
 }
 
 .star-rating {
@@ -5026,4 +5027,7 @@ h3#ship-to-different-address {
 	.woocommerce-account  .my_account_orders .button {
 		display: block;
 	}
+}
+ins{
+	text-decoration: none!important;
 }
